@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    font-family: "Inter";
+}
+
+.contact-section h2 {
+    color: #333;
+    font-size: 32px;
+}
+
+.contact-section p {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espacio entre campos */
+    max-width: 500px; /* Limita el ancho del formulario */
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    border: 1px solid #ccc; /* Establece un borde uniforme */
+    background-color: #fff; /* Asegura un fondo blanco para todos los elementos */
+    box-shadow: none; /* Elimina cualquier sombra que pueda estar causando la apariencia de borde más grueso */
+    outline: none; /* Elimina el contorno que algunos navegadores añaden al enfocar */
+    -webkit-appearance: none; /* Elimina estilos específicos de WebKit/Blink */
+    -moz-appearance: none; /* Elimina estilos específicos de Firefox */
+    appearance: none; /* Estandariza la apariencia en todos los navegadores */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff; /* Cambia el color del borde al enfocar para mejor feedback visual */
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25); /* Añade un sutil resplandor al enfocar */
+}
+
+.contact-form textarea {
+    height: 150px; /* Ajusta la altura del textarea para hacerlo más grande */
+}
+
+.contact-form button {
+    background-color: #000; /* Botón negro */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+    padding: 15px 0; /* Padding vertical para hacer el botón más alto */
+}
+
+.contact-form button:hover {
+    background-color: #333; /* Oscurecer el botón en hover */
+}

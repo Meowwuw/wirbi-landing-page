@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+.news-events {
+    text-align: center;
+    padding: 40px 20px 50px 20px;
+    background-color: #F4F4F5; /* Color de fondo para la sección */
+    font-family: "Inter";
+}
+
+.news-events h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.news-events p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px; 
+    border-radius: 10px;
+    text-align: left;
+}
+
+.news-item h3, .news-item p {
+    text-align: left; /* Alinea el título y el párrafo a la izquierda */
+    margin-left: 0;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Borde redondeado para las imágenes */
+}
+
+.news-item button {
+    font-size: 15px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #375FC1; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: start;
+}
+
+.news-item button:hover {
+    background-color: #2C48B5; /* Color más oscuro en hover */
+}

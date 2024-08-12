@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.clients {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #fff; 
+    font-family: "Inter";
+}
+
+.clients h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.clients p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.client-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.client-logo {
+    width: 150px; /* Ajusta según el tamaño deseado para los logos */
+    height: 100px; /* Ajusta según la proporción de los logos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4; /* Fondo para cada logo, ajusta según necesidad */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.client-logo img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.client-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.client-buttons .contact {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #ED1433; /* Color rojo para el botón Contáctanos */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+}
+
+.client-buttons .contact:hover {
+    background-color: #D1122F; /* Un tono más oscuro para hover */
+}
+
+.client-buttons .more-info {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: white; /* Fondo blanco */
+    color: #375FC1; /* Texto color azul */
+    border: 2px solid #375FC1; /* Borde azul */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+}
+
+.client-buttons .more-info:hover {
+    background-color: #375FC1; /* Fondo azul en hover */
+    color: white; /* Texto blanco en hover */
+}

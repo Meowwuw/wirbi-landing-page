@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+nav {
+    background-color: #1E1E1E; 
+    box-shadow: 0 4px 2px -2px gray;
+    padding: 20px 40px;
+    font-family: "Inter";
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+}
+
+
+li {
+    margin: 0 15px; 
+}
+
+a {
+    color: white; /* Ajustar el color*/
+    text-decoration: none;
+    font-size: 18px; /* Ajusta el tamaño de la fuente  */
+}
+
+nav ul li img {
+    height: 20px;  
+    vertical-align: middle; /* Para alinear verticalmente con el texto */
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 10px 0; /* Ajusta los márgenes para dispositivos móviles */
+    }
+}
