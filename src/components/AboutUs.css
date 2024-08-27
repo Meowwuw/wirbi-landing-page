@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.about-us-intro {
+    height: 55vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #ECDBE1;
+}
+
+  .about-us-intro,
+  .about-us-history,
+  .about-us-mission,
+  .about-us-team,
+  .contact-section {
+    margin-bottom: 40px;
+  }
+  
+  
+  .about-us-text {
+    margin-left: 180px;
+    margin-top: -50px;
+    font-size: 1.5rem;
+  }
+  
+  .about-us-image img {
+    max-width: 100%;
+    height: 390px;
+    margin-right: 280px;
+    margin-top: -50px;
+  }
+
+  .about-us-mission h2 {
+    text-align: center;
+    font-size:2em;
+    font-family: "Inter";
+    color: #333;
+  }
+   
+  .mission-values-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 80px;
+  }
+  
+  .mission-values-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+  }
+
+  .mission-values-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .mission-values-item .icon img {
+    width: 30px; /* Ajusta el tamaño del icono dentro de la bolita */
+    height: 30px;
+  }
+  
+  .about-us-team h2{
+    font-size: 2em;
+    text-align: center;
+    font-family: "Inter";
+    color: #333;
+  }
+
+
+  .team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 80px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 80px;
+}
+
+.team-member {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+  align-items: center;
+}
+
+.team-member img {
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.team-member h3 {
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+
+
+  .contact-section {
+    background-color: #ffffff;
+    padding-bottom: 80px;
+    text-align: center; /* Centra el título */
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    text-align: center;
+    font-family: "Inter";
+    color: #333;
+    margin-bottom: 40px; /* Añade espacio entre el título y el contenido */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.contact-map {
+    flex: 1;
+    min-width: 500px;
+    margin-right: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    margin-left: 200px;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333333;
+    text-align: left;
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}

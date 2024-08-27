@@ -18,9 +18,9 @@ const Footer = () => {
           <span>Integración IT</span>
         </div>
         <div className="social-icons">
-          <img src="/assets/facebook.png" alt="Facebook" />
-          <img src="/assets/linkedIn.png" alt="Linkedin" />
-          <img src="/assets/instagram.png" alt="Instagram" />
+          <img src="https://storage.googleapis.com/landing-page-w/assets/facebook.png" alt="Facebook" />
+          <img src="https://storage.googleapis.com/landing-page-w/assets/linkedIn.png" alt="Linkedin" />
+          <img src="https://storage.googleapis.com/landing-page-w/assets/instagram.png" alt="Instagram" />
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ const NewsEvents = () => {
                 {[...Array(3)].map((_, index) => (
                     <div className="news-item" key={index}>
                         <div className="news-image">
-                            <img src='/assets/news.jpg' alt="Noticia" />
+                            <img src='https://storage.googleapis.com/landing-page-w/assets/news.jpg' alt="Noticia" />
                         </div>
                         <h3>Título de la Noticia</h3>
                         <p>Descubre cómo la IA esta revolucionando la forma en que las empresas operan y toman decisiones.</p>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{background-color: #F4F4F5;}
+.title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Inter";
+  }
+
+  p{
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+  }
+  
+  .vertical-timeline::before {
+    background: #BD2A5E; 
+    width: 4px; 
+  }
+
+  

@@ -1,0 +1,119 @@
+.blog-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-size: 2.5em;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center; /* Cambiado a 'center' */
+    max-width: 600px;
+}
+
+.event-card img {
+    width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-button {
+    background-color: #BD2A5E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-button:hover {
+    background-color: #a31e4b;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.blog-container h3 {
+    font-size: 2.5em;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.blog-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 45%;
+    margin: 10px;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center; /* Cambiado a 'center' */
+    margin-top: 20px;
+}
+
+.blog-card img {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-card h4 {
+    font-size: 1.5em;
+    color: #BD2A5E;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.blog-card p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.learn-more {
+    color: #BD2A5E;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}

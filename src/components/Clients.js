@@ -10,7 +10,7 @@ const Clients = () => {
                 {/*Imágenes/logos como recursos estáticos */}
                 {[...Array(6)].map((_, index) => (
                     <div className="client-logo" key={index}>
-                        <img src='/assets/clients.jpg' alt="Cliente" />
+                        <img src='https://storage.googleapis.com/landing-page-w/assets/clients.jpg' alt="Cliente" />
                     </div>
                     
                 ))}

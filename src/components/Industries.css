@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.industries-section {
+    min-height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.industries-section h2 {
+    text-align: center;
+    font-size:2em;
+    font-family: "Inter";
+    color: #333;
+    padding-bottom: 40px;
+}
+
+.industries-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en cada fila */
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.industry-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left; /* Alinea el texto y el botón a la izquierda */
+    width: 100%;
+    max-width: 300px;
+}
+
+.industry-item .icon {
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.industry-item .icon img {
+    width: 30px; 
+    height: 30px;
+}
+
+.industry-item h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.industry-item p {
+    margin-bottom: 20px;
+    color: #666;
+    text-align: left;
+}
+
+.industry-item .learn-more {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block; /* Para que el botón ocupe solo el ancho necesario */
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.customers-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.customers-section h2 {
+    font-size: 2.5em;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 100px;
+    color: #333;
+}
+
+.customer-logos, .partners-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.customer-logos img, .partners-logos img {
+    width: 120px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.customer-logos img:hover, .partners-logos img:hover {
+    transform: scale(1.1);
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.testimonial-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    text-align: left;
+}
+
+.testimonial-item p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.testimonial-item h4 {
+    font-size: 1.2em;
+    color: #333333; 
+    font-weight: bold;
+    display: flex;
+    align-items: center;  /* Alinea el ícono con el nombre */
+}
+
+.testimonial-item p:last-child {
+    font-size: 1em;
+    color: #666666; 
+    font-weight: normal; 
+    text-align: left;
+    margin-left: 60px;
+}
+
+.testimonial-item img {
+    width: 44px; 
+    height: 44px;
+    margin-right: 20px; 
+}
+
+.testimonial-item p:last-child {
+    font-size: 1em;
+    color: #666;
+}
