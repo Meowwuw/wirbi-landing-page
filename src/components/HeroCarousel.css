@@ -2,13 +2,14 @@
 
 .hero-carousel {
     position: relative;
-    background-image: linear-gradient(to right, #E01A3F, #CF224E, #BF2A5D, #AD326D, #A23877);
+    background-color: transparent;
     color: white;
     height: 60vh;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2; 
 }
 
 .hero-slide {

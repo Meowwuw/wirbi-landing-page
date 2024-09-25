@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .navbar {
-    background-image: linear-gradient(to right, #b9b9b9, #CF224E, #BF2A5D, #AD326D, #A23877);
-    box-shadow: 0 4px 2px -2px gray;
+    background-color: transparent;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Inter";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navbar-logo img {
@@ -33,13 +37,13 @@
     font-size: 18px;
 }
 
-.navbar-menu li img {
-    height: 20px;
-    vertical-align: middle;
-}
-
 .navbar-menu a:hover {
     text-decoration: underline;
+}
+
+/* Clase para cambiar el texto a negro */
+.black-text {
+    color: black !important;
 }
 
 @media (max-width: 768px) {

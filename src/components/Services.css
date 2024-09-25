@@ -1,56 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-
 .services {
+    padding: 80px 20px;
     text-align: center;
-    padding: 20px;
-    background-color: #F4F4F5; /* Fondo claro para la sección */
-    font-family: "Inter";
 }
 
-.services h3 {
-    font-size: 20px;
+.services-header {
+    margin-bottom: 40px;
 }
+
 .services h2 {
-    font-size: 2em;
-    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .services p {
+    font-size: 18px;
     color: #666;
-    margin-bottom: 25px;
 }
 
 .service-list {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
 }
 
 .service {
-    width: 30%; 
-    padding:20px 10px 0px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera para cada tarjeta de servicio */
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    text-align: left; /* Alinea el texto a la izquierda */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinea los contenidos internos a la izquierda */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
-
-.icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%; /* Hace los iconos circulares */
+.service .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    background-size: 200% 200%;
+    transition: transform 0.3s ease;
+}
+
+.service .icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.service h3 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
-.icon img {
-    max-width: 50%;
-    max-height: 50%;
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+.service:hover .icon {
+    transform: translateY(-10px);  /* Mueve el ícono hacia arriba al pasar el cursor */
+    transition: transform 0.3s ease;
+}
+
+.gradient-bg-services {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-size: 200% 200%;
+    background: linear-gradient(to right, rgba(224, 224, 224, 1), rgba(242, 242, 242, 1));
+    transition: background 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .service-list {
+        grid-template-columns: 1fr;
+    }
 }

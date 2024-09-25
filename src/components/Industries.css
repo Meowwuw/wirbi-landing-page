@@ -1,72 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 .industries-section {
-    min-height: 100vh;
-    background-color: #ffffff;
+    padding: 80px 20px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .industries-section h2 {
-    text-align: center;
-    font-size:2em;
-    font-family: "Inter";
+    font-size: 36px;
+    margin-bottom: 40px;
     color: #333;
-    padding-bottom: 40px;
 }
 
 .industries-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas en cada fila */
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
     justify-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .industry-item {
-    background-color: #f9f9f9;
+    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: left; /* Alinea el texto y el botón a la izquierda */
-    width: 100%;
-    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .industry-item .icon {
-    width: 60px; 
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto 20px;
+    background-size: 200% 200%;
+    transition: transform 0.3s ease;
 }
 
 .industry-item .icon img {
-    width: 30px; 
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .industry-item h3 {
+    font-size: 24px;
     margin-bottom: 10px;
-    font-size: 1.5em;
-    color: #333;
 }
 
 .industry-item p {
-    margin-bottom: 20px;
+    font-size: 16px;
     color: #666;
-    text-align: left;
+    margin-bottom: 10px;
 }
 
-.industry-item .learn-more {
-    color: #4A90E2;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: left;
-    display: inline-block; /* Para que el botón ocupe solo el ancho necesario */
+.industry-item:hover .icon {
+    transform: translateY(-10px);  /* Efecto de mover el ícono hacia arriba */
+    transition: transform 0.3s ease;
+}
+
+.gradient-bg-industries {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-size: 200% 200%;
+    transition: background 0.5s ease;
+}
+
+.industry-item:hover .gradient-bg {
+    background: linear-gradient(to right, #FF7EB9, #FF6589); /* Cambia los colores al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+    .industries-container {
+        grid-template-columns: 1fr;
+    }
 }

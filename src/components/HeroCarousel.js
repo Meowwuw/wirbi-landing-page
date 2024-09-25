@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HeroCarousel.css';
+import BubbleBackground from './BubbleBackground'; // Import the Bubble Background
 
 const slides = [
   {
@@ -40,30 +41,20 @@ const HeroCarousel = () => {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000); // Auto-slide every 5 seconds
+    const timer = setInterval(nextSlide, 5000);
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className="hero-carousel">
+      <BubbleBackground /> {/* Add the bubble background */}
       {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`hero-slide ${index === currentSlide ? 'active' : ''}`}
-        >
-          <h1>{slide.title.split('<br />').map((line, idx) => (
-              <span key={idx}>
-                {line}
-                <br />
-              </span>
-            ))}</h1>
+        <div key={index} className={`hero-slide ${index === currentSlide ? 'active' : ''}`}>
+          <h1>{slide.title}</h1>
           <p>{slide.description}</p>
           <div className="hero-buttons">
             {slide.buttons.map((button, btnIndex) => (
-              <button
-                key={btnIndex}
-                className={button.primary ? '' : 'nuestros-servicios'}
-              >
+              <button key={btnIndex} className={button.primary ? '' : 'nuestros-servicios'}>
                 {button.text}
               </button>
             ))}
